@@ -38,6 +38,6 @@ Welcome to my personal portfolio website! 🚀 This project showcases my skills,
 Feel free to connect with me:
 - **GitHub**: [Bhagvati-Gaikwad](https://github.com/Bhagvati-Gaikwad)
 - **LinkedIn**: [Bhagvati Gaikwad](https://www.linkedin.com/in/bhagvati-gaikwad-ab89992a1/)
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Email**: [bhagvatigaikwad1@gmail.com](mailto:your-email@example.com)
 
 🔹 *This portfolio is a continuous work in progress, and I look forward to adding more projects and certifications!* 🚀
