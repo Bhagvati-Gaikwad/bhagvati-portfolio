@@ -6,26 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Bhagvati</title>
   <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-  <header>
-    <h1>Bhagvati Gaikwad</h1>
-    <h3>Aspiring Cloud Engineer</h3>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <nav id="desktop-nav">
+    <div class="logo">Hello </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bhagvati Gaikwad</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+      <section id="profile">
+      <div class="section__pic-container">
+        <img class="imgpic" src="assests/mypic.jpeg" alt="Bhagvati Gaikwad profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bhagvati Gaikwad</h1>
+        <p class="section__text__p2">Aspiring Cloud Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Bhagvati_Gaikwad_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:/www.linkedin.com/in/bhagvati-gaikwad-ab89992a1/'"
+          />
+          <img
+            src="./assests/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https:/https:/github.com/Bhagvati-Gaikwad'"
+          />
+        </div>
+      </div>
+    </section>
 
   <main>
+   
     <section id="about">
-      <img src="assests/mypic.jpeg" alt="Your Profile Picture" class="about-image">
+      <!-- <img src="assests/mypic.jpeg" alt="Your Profile Picture" class="about-image"> -->
       <div class="about-content">
         <h2>About Me</h2>
         <p>
@@ -36,8 +86,8 @@
           and <b>virtualization technologies</b>, which helped me understand the backbone of cloud computing.
         </p>
         <p>
-          My cloud expertise includes <b>Amazon Web Services</b> and  
-          <b>Google Cloud Platform</b>, where I explore infrastructure deployment, networking,  
+          My cloud expertise includes Amazon Web Services and  
+           Google Cloud Platform, where I explore infrastructure deployment, networking,  
           and security best practices. Additionally, I have hands-on experience with <b>web design</b>  
           and a brief but growing knowledge of <b>computer networks</b>.
         </p>
@@ -45,10 +95,7 @@
           Passionate about <b>problem-solving, automation, and scalability</b>,  
           I am eager to apply my skills to real-world cloud projects and continue my journey in cloud engineering.
         </p>
-        <!-- Resume Download (not working yet) -->
-        <a href="assets/resume.pdf" download="Bhagvati_Gaikwad_Resume.pdf">
-          <button>Download Resume</button>
-        </a>
+      
       </div>
     </section>
     
@@ -77,7 +124,7 @@
 
         </p>
         <a href="https://bhagvati-gaikwad.github.io/CloudCast/" target="_blank">
-          <button>View Project</button>
+          <button class="btn btn-container">View Project</button>
         </a>
       </div>
     
@@ -86,7 +133,7 @@
         <h3>Budget tracker</h3>
         <p>A responsive web application designed to help users manage their personal finances. The tool allows users to set a budget, log and categorize expenses, and generate downloadable PDF reports. Built with a user-friendly interface, it streamlines financial tracking and encourages better budgeting habits.</p>
         <a href="https://bhagvati-gaikwad.github.io/Budget-tracker/ " target="_blank">
-          <button>View Project</button>
+          <button class="btn btn-container">View Project</button>
         </a>
       </div>
     </section>
@@ -123,21 +170,42 @@
     </section>
     
     <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="social-links">
-        <a href="https://github.com/Bhagvati-Gaikwad" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.youtube.com/@addictededitz2286" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/in/bhagvati-gaikwad-ab89992a1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/____shivani_g____/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+   <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assests/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/bhagvati-gaikwad-ab89992a1/">LinkedIn</a></p>
+        </div>
       </div>
     </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Bhagvati Gaikwad. All Rights Reserved.</p>
+    </footer>
   </main>
-
-  <footer>
-    <p>&copy; 2025 BG Portfolio</p>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
