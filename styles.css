@@ -4,10 +4,12 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #FFFDF5;
 }
 
 html {
@@ -57,8 +59,11 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-  font-size: 2rem;
+.logo-img {
+  width: 90px;
+  height: 90px;
+margin: 5px;
+
 }
 
 .logo:hover {
@@ -179,8 +184,11 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  justify-items: center;
   gap: 5rem;
   height: 80vh;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 .imgpic{
   border: 1px solid black;
@@ -198,10 +206,13 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+ width: 500px;
+margin-bottom: 30px;
 }
 
 .section__text p {
   font-weight: 600;
+  
 }
 
 .section__text__p1 {
@@ -239,14 +250,14 @@ section {
   border: 1px solid black;
   border-radius: 8px;
   background-color: rgba(210, 231, 249, 0.272);
-  max-width: 600px;
+  max-width: 700px;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--accent-color);
+  background-color: #FFFDF5;
   color: white;
 }
 
@@ -317,7 +328,7 @@ footer {
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: white;
+  color: #FFFDF5;
 }
 
 .btn-color-1:hover {
@@ -437,9 +448,21 @@ section {
 /* About Section - Very Light Blue */
 #about {
   
-  background-color: #F8FAFC;
+  background-color: #FFFDF5;
   color: #2D336B;
-  font-size: 35px;
+  font-size: 20px;
+ margin: 2px;
+ padding-top: 30px;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
 }
 
 /* Skills Section - Soft Blue */
@@ -447,8 +470,16 @@ section {
  
   color: #f4f4f9;
   box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.05);
-/*   border: 1px solid rgb(55, 54, 54); */
-/*   border-radius: 10px; */
+  border: 1px solid rgb(55, 54, 54); 
+  border-radius:10px;
+
+} 
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
 }
 
 
@@ -466,8 +497,8 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin: 1rem auto;
+  padding: 0.2rem;
 }
 
 .contact-info-container {
@@ -493,17 +524,22 @@ section {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 15vh;
   margin: 0 1rem;
+  padding: 2rem;
 }
 
 footer p {
   text-align: center;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFFDF5;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   section {
-      padding: 60px 5%;
+      padding: 60px 3%;
   }
   
   button {
