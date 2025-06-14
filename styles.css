@@ -438,6 +438,7 @@ section {
   
   background-color: #F8FAFC;
   color: #2D336B;
+  font-size: 16px;
 }
 
 /* Skills Section - Soft Blue */
@@ -445,8 +446,8 @@ section {
  
   color: #f4f4f9;
   box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgb(55, 54, 54);
-  border-radius: 10px;
+/*   border: 1px solid rgb(55, 54, 54); */
+/*   border-radius: 10px; */
 }
 
 
